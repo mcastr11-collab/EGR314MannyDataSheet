@@ -1,13 +1,13 @@
-site_name: EGR 314 Data Sheet Template
-site_url: https://embedded-systems-design.github.io/EGR314DataSheetTemplate
-repo_url: https://github.com/embedded-systems-design/EGR314DataSheetTemplate
+site_name: Exploration Drone Project Manny Datasheet
+site_url: https://mcastr11-collab.github.io/EGR314MannyDataSheet/
+repo_url: https://github.com/mcastr11-collab/EGR314MannyDataSheet
 edit_uri: edit/main/docs/
 theme:
   name: material
   custom_dir: custom_theme/
   palette:
-    primary: blue
-    accent: indigo
+    primary: cyan
+    accent: blue
   font:
     text: Roboto
   logo: static/logo314.svg
@@ -59,7 +59,7 @@ extra_javascript:
 not_in_nav: |
   static
   
-copyright: "Copyright &copy; 2026 team-name-here"
+copyright: "Copyright &copy; 2026 Manuel Castro"
 
 extra:
   generator: false
