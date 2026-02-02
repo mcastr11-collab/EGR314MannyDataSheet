@@ -1,5 +1,5 @@
 ---
-title: Module's Requirements
+title: Camera Stability and Sensor Suite Module Requirements
 ---
 
 ## Sybsystem Requirements
@@ -22,7 +22,7 @@ Requirements are split between the Measure of Threshold(MoT), being the minimum 
 
 <br>
 
-## ROverview of Requirements
+## Overview of Requirements
 
 This subsystem will be the the camera sensor module for our search and rescue bot that will need to be capable of operating in natural disaster zones and urban rescue situations. As a stretch goal, we also intend the device to be capable as a land rover in low atmosphere planets, such as Mars. As a search and rescue robot, it needs to be able to locate survivors by sight, sound, and ground vibrations. 
 
