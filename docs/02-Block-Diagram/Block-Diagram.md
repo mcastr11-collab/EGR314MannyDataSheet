@@ -21,7 +21,7 @@ To get some initial formatting help, one can view ["here"](https://embedded-syst
 ## Camera & Distance Sensor Block Diagram 
 Below is a block diagram showing the communication between the camera sensor, the ultrasonic distance sensors, the WiFi module on the ESP32, and the bidirectional serial communication via UART to other subsystems.
 
-
+![Block Diagram](314subsystem.png){style width:"350" height:"300;"}<br>
 ![Indivial Block diagram](314subsystem.png)<br>
 <object data="https://mcastr11-collab/EGR314MannyDataSheet/docs/02-Block-Diagram/Camera_Sensors Subsystem Diagram-314.drawio.pdf.pdf" type="application/pdf" width="700px" height="700px">
     <embed src="https://mcastr11-collab/EGR314MannyDataSheet/docs/02-Block-Diagram/Camera_Sensors Subsystem Diagram-314.drawio.pdf">
