@@ -9,12 +9,10 @@ The following sections detail the selected major components of my camera sensor 
 
 ### Power Management (Pending further research)
 
-WIP
+>WIP
 
 
 ### Camera Sensor Subsystem Components
-
-> Also acceptable, more markdown friendly
 
 **Camera Modules**
 
@@ -64,9 +62,10 @@ WIP
     | Highest resolution lens 3280x2464                     | May cause image distortion due to wide angle lens
 
 **Rationale:** As a rover camera image quality is important, though lowering bandwith requirements would be more desired. Option 1 would be the choice to go with for this reason since it is also more simpler to configure due to many existing projects already using this camera. However, option 2 is a solid choice as an alternative since both the OV2640 and the OV5640 use the same connectors, the same pin out, and power requirements.
-<br>
+
 
 **Antenna**
+
 1. FXP74 4dBi Antenna
 
     <img src="FXP74.png" width="500px">
