@@ -20,8 +20,10 @@ The following sections detail the selected major components of my camera sensor 
 
    ![](OV2640.png)
 
+
     * $7/each
     * [link to product](https://www.arducam.com/arducam-ov2640-camera-module-2mp-mini-ccm-compact-camera-modules-compatible-with-arduino_m0031esp32-esp8266-development-board-with-dvp-24-pin-interface_.html?utm_source=chatgpt.com)
+
 
     | Pros                                      | Cons                                                             |
     | ----------------------------------------- | ---------------------------------------------------------------- |
@@ -34,7 +36,7 @@ The following sections detail the selected major components of my camera sensor 
 
 2. OV5640 5MP Camera
 
-    <img src="OV5640.png" width="500" height="280">
+    ![](OV5640.png)
 
     * $12/each
     * [link to product](https://www.digikey.com/en/products/detail/seeed-technology-co-ltd/114993115/21277047?gclsrc=aw.ds&gad_source=4&gad_campaignid=20243136172&gbraid=0AAAAADrbLliIj7nqkCgKgPAf35VmcjbPB&gclid=Cj0KCQiA18DMBhDeARIsABtYwT2GgNp2cgT6oq6x8lDDpRaIGovvy30oN0l5Lt_dI2OKIPChIDufihIaAn56EALw_wcB)
