@@ -18,7 +18,7 @@ The following sections detail the selected major components of my camera sensor 
 
 1. OV2640 2MP Camera
 
-    <img src="OV2640.png" width="500px">
+   <img src="./OV2640.png" width="500">
 
     * $7/each
     * [link to product](https://www.arducam.com/arducam-ov2640-camera-module-2mp-mini-ccm-compact-camera-modules-compatible-with-arduino_m0031esp32-esp8266-development-board-with-dvp-24-pin-interface_.html?utm_source=chatgpt.com)
@@ -34,7 +34,7 @@ The following sections detail the selected major components of my camera sensor 
 
 2. OV5640 5MP Camera
 
-    <img src="OV5640.png" width="500px">
+    <img src="./OV5640.png" width="500">
 
     * $12/each
     * [link to product](https://www.digikey.com/en/products/detail/seeed-technology-co-ltd/114993115/21277047?gclsrc=aw.ds&gad_source=4&gad_campaignid=20243136172&gbraid=0AAAAADrbLliIj7nqkCgKgPAf35VmcjbPB&gclid=Cj0KCQiA18DMBhDeARIsABtYwT2GgNp2cgT6oq6x8lDDpRaIGovvy30oN0l5Lt_dI2OKIPChIDufihIaAn56EALw_wcB)
@@ -49,7 +49,7 @@ The following sections detail the selected major components of my camera sensor 
 
 3. IMX219 8MP Camera
 
-    <img src="IMX219.png" width="500px">
+    <img src="./IMX219.png" width="500">
 
     * $16/each + Pi
     * [link to product](https://www.arducam.com/arducam-imx219-wide-angle-camera-module-drop-in-replacement-for-raspberry-pi-v2-and-nvidia-jetson-camera-b0286.html)
@@ -68,7 +68,7 @@ The following sections detail the selected major components of my camera sensor 
 
 1. FXP74 4dBi Antenna
 
-    <img src="FXP74.png" width="500px">
+    <img src="./FXP74.png" width="500">
     * $4.02/each
     * [link to product](https://www.digikey.com/en/products/detail/taoglas-limited/FXP74-07-0100A/3877416?gclsrc=aw.ds&gad_source=1&gad_campaignid=120565755&gbraid=0AAAAADrbLlgZA-wfFkVjL0-pdZ33x8ABV&gclid=Cj0KCQiA18DMBhDeARIsABtYwT08k87s1mwmgDJ7gRaUCMtLNKURm9b2yRdfqc_RSkHROIXoXmRWSU0aAqZBEALw_wcB)
 
@@ -82,7 +82,7 @@ The following sections detail the selected major components of my camera sensor 
 
 2. FXP72 3dBi Antenna
 
-    <img src="FXP72.png" width="500px">
+    <img src="./FXP72.png" width="500">
 
     * $3.62/each
     * [link to product](https://www.digikey.com/en/products/detail/taoglas-limited/FXP72-07-0053A/2332702?gclsrc=aw.ds&gad_source=1&gad_campaignid=120565755&gbraid=0AAAAADrbLlgZA-wfFkVjL0-pdZ33x8ABV&gclid=CjwKCAiA-sXMBhAOEiwAGGw6LAhgV2RVupQSf2ynJYEDeLKvd9Jyh3OxBOgERQCzDm_5qtmDbWKGuhoCGfYQAvD_BwE)
@@ -97,7 +97,7 @@ The following sections detail the selected major components of my camera sensor 
 
 3. Molex 2069940100 3.6dBi Antenna
 
-    <img src="Molex.png" width="500px">
+    <img src="./Molex.png" width="500">
 
     * $1.95/each 
     * [link to product](https://www.digikey.com/en/products/detail/molex/2069940100/9450924)
