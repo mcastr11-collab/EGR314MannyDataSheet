@@ -18,7 +18,7 @@ The following sections detail the selected major components of my camera sensor 
 
 1. OV2640 2MP Camera
 
-   <img src="./OV2640.png" width="500">
+   <img src="https://mcastr11-collab.github.io/EGR314MannyDataSheet/03-Component-Selection/Component-Selection/OV2640.png" width="500">
 
     * $7/each
     * [link to product](https://www.arducam.com/arducam-ov2640-camera-module-2mp-mini-ccm-compact-camera-modules-compatible-with-arduino_m0031esp32-esp8266-development-board-with-dvp-24-pin-interface_.html?utm_source=chatgpt.com)
