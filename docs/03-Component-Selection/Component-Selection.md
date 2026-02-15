@@ -112,12 +112,12 @@ The following sections detail the selected major components of my camera sensor 
     | Dual band compatible 2.4 & 5 GHz                      | Very low efficiency due to design type                |
     | Bluetooth compatible                                  | 
 
-**Justification**
+**Justification** <br>
 The usable wireless range of the camera subsystem is determined by the system link budget, which includes transmitter power, antenna gain, propagation loss, receiver sensitivity, and system losses. While the ESP32-S3 provides a fixed Wi-Fi transmit power, the use of an external antenna improves effective range by increasing antenna efficiency and allowing optimal placement away from noise sources. Environmental factors such as distance, obstructions, and multipath fading, significantly affect range at 2.4 GHz. Operating the camera in a low-resolution streaming mode reduces required data rate and improves receiver sensitivity, further extending usable range. This design approach supports a reliable near 30 m operating distance while remaining compliant with regulatory limits.
 
-**Rationale:**
+**Rationale:** <br>
 Ideally if size is not a problem all 3 options would work, they all share the same U.FL cable connector, and have around the same gain. Any should be good alterntives in case availability becomes a problem. For cost option 3 would be the best, but since we are trying to pass through video content (QVGA/ VGA) it would be best to go with options 1 or 2. At this point it becomes a matter of which one works with our available space in the rover, so option one would be the safer choice if space is a concern.
 
 
-**Resources Used**
+**Resources Used** <br>
 More on antenna types and applications [here](https://www.digikey.com/en/articles/selecting-antennas-for-embedded-designs)
