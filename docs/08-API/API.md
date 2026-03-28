@@ -31,6 +31,10 @@ This is used to tell the camera subsystem to start or pause the livestream to th
 
 The messages are to be transmitted as individual characters over UART, where each character represents one byte in the message structure. This subsystem will periodically transmit the camera stream status to all other subsytems, such as the communication module, such as they are all able to react to the availability of the stream in real time.
 
+## Valid Message Examples
 
-
+Received Message (turn on stream):  AZMCR1......YB <br>
+Received Message (turn off stream): AZMCR0......YB <br>
+Sent Message (stream is online):  AZMSC1......YB <br>
+Sent Message (stream is offline):  AZMSC0......YB 
 
