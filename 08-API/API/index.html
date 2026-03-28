@@ -778,6 +778,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#valid-message-examples" class="md-nav__link">
+    <span class="md-ellipsis">
+      Valid Message Examples
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -901,6 +910,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#valid-message-examples" class="md-nav__link">
+    <span class="md-ellipsis">
+      Valid Message Examples
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -992,6 +1010,11 @@
 <p>"R" is the "reveived" camera message looping back to the subsytem."0" is a message command to pause the stream and "1" to initiate the stream.</p>
 </blockquote>
 <p>The messages are to be transmitted as individual characters over UART, where each character represents one byte in the message structure. This subsystem will periodically transmit the camera stream status to all other subsytems, such as the communication module, such as they are all able to react to the availability of the stream in real time.</p>
+<h2 id="valid-message-examples">Valid Message Examples</h2>
+<p>Received Message (turn on stream):  AZMCR1......YB <br>
+Received Message (turn off stream): AZMCR0......YB <br>
+Sent Message (stream is online):  AZMSC1......YB <br>
+Sent Message (stream is offline):  AZMSC0......YB </p>
 
 
 
