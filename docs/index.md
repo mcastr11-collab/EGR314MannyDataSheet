@@ -36,6 +36,11 @@ My subsystem focuses on the camera system, which provides the drone operator wit
 
 I designed and integrated the camera sensor on a custom PCB, integrating my chosen ESP32-S3 microcontrollerwith the OV2640 image sensor from OmniVision. This included maping the camera interface pins on its 24 pin FPC connector, and providing regulated power to both the ESP32-S3 microcontroller and the OV2640. The camera sensor required a dedicated 1.5V and 2.8V power rail, while the ESP32-S3 operates a 3.3V power rail.
 
+<div align="center">
+  <img src="IMG_7505.jpeg" width="600">
+</div>
+
+
 On the software side, I developed firmware to initialize the camera, capture image frames, and convert raw image data into JPEG format for efficient transmission. The system streams this data over WiFi using an embedded HTTP server hosted on the ESP32-S3.
 
 In addition to the video streaming, I implemented a UART communication system to integrate my camera subsystem into the team's distributed network. This includes message formatting, parsing, forwarding, and broadcast handling for inter subsystem communication. The UART system also transmits telemetry data such as framerate, resolution, and camera stream status, to the Human-Machine Interface.
