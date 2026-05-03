@@ -47,6 +47,9 @@ In addition to the video streaming, I implemented a UART communication system to
 
 Finally, I created a website interface that the drone operator can use to view a live video feed of the drone camera and see performace metrics related to the camera such as, the size of the data, framerate, resolution, and total frames captured.
 
+<div align="center">
+  <img src="sable cam page.png" width="600">
+</div>
 
 * The list of components used to construct my subsystem may be found in the ["BOM"](https://mcastr11-collab.github.io/EGR314MannyDataSheet/04-BOM/BOM/) section of the datasheet.
 
