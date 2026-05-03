@@ -6,35 +6,47 @@ tags:
 ---
 
 ## Overview
-The camera subsystem uses the class UART daisy-chain protocol to broadcast low-bandwidth status information such as whether the livestream is online. Actual image or video data is sent separately through the wireless website/server link on the main microcontroller. The auxiliary ESP 32 handled communication with the subsystem daisy chain via the UART packet network.
+The camera subsystem uses the class UART daisy-chain protocol to transmit information, such as livestream status, frame rate, and resolution. Actual image and video data are not sent over UART; they are transmitted separately through the ESP32-S3’s WiFi access point and embedded HTTP server. Camera telemetry and stream status are sent as independent UART packets to Lia’s HMI subsystem and Matthew’s communication subsystem. The ESP32-S3 handles both the camera web interface and UART packet communication with the subsystem daisy chain.
+
+Due to bandwidth limitations of UART communication, high-volume image data is not transmitted through the UART network. Instead, the camera subsystem streams image data over WiFi using an embedded HTTP server. UART communication is reserved for low-bandwidth control and status messages.
+
+Each UART message follows a standardized format consisting of a start sequence ("AZ"), a source identifier, a destination identifier, a variable-length payload, and an end sequence ("YB"). The use of start and end delimiters allows the receiving subsystem to reliably detect complete messages within a continuous serial data stream. 
+
+Each UART packet is analized via internal message validation  on my subsystem to ensure that malformed or incomplete packets are discarded, improving system robustnes.
 
 ## Messages Sent
 
+The camera subsystem periodically transmits telemetry data to other subsystems, including Lia's Human-Machine Interface (HMI) and Matthew's communication module. These telemetry messages include frame rate, resolution, and livestream status, allowing other subsystems to react to changes in camera availability in real time. More details on the message structure can be found on the tables below.
 
-| **Byte** | **Variable Name** | **Type** | **Min Value** |  **Min Value** |
-|---:|---|---|---|:---:|
-| Byte 1 | message_type | char | C | C |
-| Byte 2 | stream_state | char | 0 | 1 | 
 
->"C" is the camera message and "0" and "1" indicate offline and online status of the stream respectively. Combined in the string, it should send a message of "C0" for camera stream offline or "C1" for camera stream online.
+| **Byte** | **Variable Name** | **Type** | **Example** |  **Description** | **Message Range**
+|---:|---|---|---|----|:---:|
+| Byte 1-2 | start      | char | AZ | Start of the message | AZ-AZ |
+| Byte 3 | source_id    | char | C | Who is it from? | C,L,M,K,V.X|
+| Byte 4 | dest_id | char | L | Who is it for? | C,L,M,K,V.X|
+| Byte 5-26 | fps | string | F: 2.0 | Current camera framerate | 0-99|
+| Byte 5-26 | resolution | string | R:320x240 | Camera resolution | 320x240|
+| Byte 5-26 | stream status | string | S:ON | Camera resolution | S: ON or S:OFF|
+| Byte end | end | char | YB | End of message| YB-YB|
 
-## Message Received
 
-This is used to tell the camera subsystem to start or pause the livestream to the website.
+## Message Handling and Forwarding
 
-| **Byte** | **Variable Name** | **Type** | **Min Value** |  **Min Value** |
-|---:|---|---|---|:---:|
-| Byte 1 | message_type | char | R | R |
-| Byte 2 | stream_command | char | 0 | 1 | 
+The camera subsystem receives UART messages as part of the distributed subsystem network. Rather than acting as a command-driven device, the subsystem functions as an autonomous node that processes, filters, and forwards messages based on their destination.
 
->"R" is the "reveived" camera message looping back to the subsytem."0" is a message command to pause the stream and "1" to initiate the stream.
+Upon receiving a message, the subsystem parses the packet structure to determine the source and destination identifiers. Messages addressed to the local subsystem are processed and logged, while messages addressed to other subsystems are forwarded along the UART daisy-chain. Broadcast messages (destination "X") are both processed and forwarded to ensure network-wide propagation.
 
-The messages are to be transmitted as individual characters over UART, where each character represents one byte in the message structure. This subsystem will periodically transmit the camera stream status to all other subsytems, such as the communication module, such as they are all able to react to the availability of the stream in real time.
+The forwarding mechanism allows each subsystem to act as a relay within the communication network. This enables communication between subsystems that are not directly connected, effectively extending the communication range and maintaining a consistent flow of information throughout the system.
 
 ## Valid Message Examples
 
-Received Message (turn on stream):  AZMCR1......YB <br>
-Received Message (turn off stream): AZMCR0......YB <br>
-Sent Message (stream is online):  AZMSC1......YB <br>
-Sent Message (stream is offline):  AZMSC0......YB 
+<table>
+<tr><th>Message</th><th>Description</th></tr>
+<tr><td>AZMLHELLOYB</td><td>Not for me (forward)</td></tr>
+<tr><td>AZMXTESTYB</td><td>Broadcast (process + forward)</td></tr>
+<tr><td>AZMCHELLOYB</td><td>For me (process only)</td></tr>
+<tr><td>AZCL F:1.5 R:320x240 S:ON YB</td><td>Outgoing message to Lia</td></tr>
+<tr><td>AZCM S:ON YB</td><td>Outgoing message to Matthew</td></tr>
+</table>
+
 
