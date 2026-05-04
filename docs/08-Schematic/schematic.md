@@ -24,4 +24,4 @@ The schematic below shows all details needed to reproduce this subsystem with th
 
 The schematic as a PDF download is available [*here*](SableCamSensorv1.9schematic.pdf).
 
->If you need the zipped source files for the schematic or any other files for this project, please see the [Resources](https://mcastr11-collab/EGR314MannyDataSheet/Appendix/Resources) section.
+>If you need the zipped source files for the schematic or any other files for this project, please see the [Resources](https://mcastr11-collab/EGR314MannyDataSheet/docs/Appendix/Resources.md) section.

@@ -2,7 +2,9 @@
 title: Appendix - Main Page
 ---
 
->The Appendix is where supporting information goes that is not in the main body. **Remove note before Review**
+The appendix has additional files for the project and an archive of old pages, ideas, and files.<br>
+
+Look at the "Resources" page for an achive of all used files and documents on the project. The "Old Archived Content" page contains older content that has since been updated.
 
 ## Appendix Content
 
