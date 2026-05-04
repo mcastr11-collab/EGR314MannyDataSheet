@@ -6,25 +6,22 @@ tags:
 ---
 
 ## Overview
-This needs to be updated with a brief purpose for having the block diagram.
-Things to mention are:
-* power levels
-* sensor
-* Actuator
-* team connections
-* Power source
-* ...
+The purpose of this block diagram is to illustrate the overall architecture and integration of the camera subsystem within the larger drone system. It highlights the key components and their interactions, including the OV2640 camera sensor, the ESP32-S3 microcontroller, and the WiFi-based HTTP server used to deliver the live video feed to the operator. The diagram also shows the distribution of power across multiple voltage levels, including the 9 V DC input source, the regulated 3.3 V DC rail for the microcontroller, and the 2.8 V DC and 1.5 V DC rails required by the camera sensor.<br>
 
-To get some initial formatting help, one can view ["here"](https://embedded-systems-design.github.io/EGR304DataSheetTemplate/Appendix/basic-markdown-examples/) some basic techniques.
+In addition, the block diagram identifies troubleshooting elements such as LED indicators used for system status and debugging. The UART TX and RX connections illustrate how the subsystem communicates with other team subsystems through a bidirectional daisy-chain network, enabling telemetry sharing and message forwarding. Overall, the diagram provides a clear representation of how power, sensing, communication, and user interaction are integrated to meet the functional requirements of the camera subsystem.
+
+The block diagram is embeded below as a PDF and it can be downloaded using the link at the bottom of the page.
 
 
 ## Camera & Distance Sensor Block Diagram 
-Below is a block diagram showing the communication between the camera sensor, the ultrasonic distance sensors, the WiFi module on the ESP32, and the bidirectional serial communication via UART to other subsystems.
 
-<object data="https://mcastr11-collab.github.io/EGR314MannyDataSheet/Camera Subsystem Block Diagram.drawio.pdf" type="application/pdf" width="700px" height="700px">
+<object data="https://mcastr11-collab.github.io/EGR314MannyDataSheet/02-Block-Diagram/Camera Subsystem Block Diagram.drawio.pdf" type="application/pdf" width="700px" height="700px">
     <embed src="https://egr304-203.github.io/sparkguard/Team203BlockDiagramFinal.pdf">
         <p>This browser does not support PDFs. Please download the PDF to view it: <a href="https://egr304-203.github.io/sparkguard/Team203BlockDiagramFinal.pdf">Download PDF</a>.</p>
     </embed>
 </object><br><br>
 
-Download of Block Diagram PDF [here](./Camera Subsystem Block Diagram.drawio.pdf)
+Download of the Block Diagram PDF file [here](./Camera Subsystem Block Diagram.drawio.pdf)<br>
+
+>If you need the zipped source files for the schematic or any other files for this project, please see the [Resources](https://mcastr11-collab/EGR314MannyDataSheet/Appendix/Resources) section.
+
