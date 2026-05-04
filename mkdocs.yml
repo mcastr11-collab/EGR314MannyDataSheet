@@ -39,6 +39,8 @@ markdown_extensions:
         - name: mermaid
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
 
 draft_docs: |
   **/*_unpublished.md
@@ -67,3 +69,6 @@ extra:
     - icon: fontawesome/regular/file-code
       link: /2026_spring
       name: 2023 Site    
+nav:
+  - Home: index.md
+  
