@@ -70,5 +70,15 @@ extra:
       link: /2026_spring
       name: 2023 Site    
 nav:
-  - Home: index.md
+  - Welcome: index.md
+  - 01 Requirements: 01-requirements.md
+  - 02 Block Diagram: 02-block-diagram.md
+  - 03 Component Selection: 03-component-selection.md
+  - 04 BOM: 04-bom.md
+  - 05 Microcontroller Selection: 05-microcontroller-selection.md
+  - 06 Power Budget: 06-power-budget.md
+  - 07 PCB: 07-pcb.md
+  - 08 Schematic: 08-schematic.md
+  - 09 API: 09-api.md
+  - 10 Reflection: 10-Reflection.md
   
