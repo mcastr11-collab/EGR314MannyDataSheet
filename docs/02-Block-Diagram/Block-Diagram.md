@@ -21,12 +21,10 @@ To get some initial formatting help, one can view ["here"](https://embedded-syst
 ## Camera & Distance Sensor Block Diagram 
 Below is a block diagram showing the communication between the camera sensor, the ultrasonic distance sensors, the WiFi module on the ESP32, and the bidirectional serial communication via UART to other subsystems.
 
-![Block Diagram](314subsystem.png){style width:"350" height:"300;"}<br>
-![Indivial Block diagram](314subsystem.png)<br>
-<object data="https://mcastr11-collab/EGR314MannyDataSheet/docs/02-Block-Diagram/Camera_Sensors Subsystem Diagram-314.drawio.pdf.pdf" type="application/pdf" width="700px" height="700px">
-    <embed src="https://mcastr11-collab/EGR314MannyDataSheet/docs/02-Block-Diagram/Camera_Sensors Subsystem Diagram-314.drawio.pdf">
-        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="https://mcastr11-collab/EGR314MannyDataSheet/docs/02-Block-Diagram/Camera_Sensors Subsystem Diagram-314.drawio.pdf">Download PDF</a>.</p>
+<object data="https://mcastr11-collab.github.io/EGR314MannyDataSheet/Camera Subsystem Block Diagram.drawio.pdf" type="application/pdf" width="700px" height="700px">
+    <embed src="https://egr304-203.github.io/sparkguard/Team203BlockDiagramFinal.pdf">
+        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="https://egr304-203.github.io/sparkguard/Team203BlockDiagramFinal.pdf">Download PDF</a>.</p>
     </embed>
-</object>
+</object><br><br>
 
-Read more [here](./Camera_Sensors%20Subsystem%20Diagram-314.drawio.pdf)
+Download of Block Diagram PDF [here](./Camera Subsystem Block Diagram.drawio.pdf)
