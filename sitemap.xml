@@ -26,12 +26,27 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://mcastr11-collab.github.io/EGR314MannyDataSheet/05-Schematic/schematic/</loc>
+         <loc>https://mcastr11-collab.github.io/EGR314MannyDataSheet/05-Microcontroller%20Selection/Microcontroller-Selection/</loc>
          <lastmod>2026-05-04</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://mcastr11-collab.github.io/EGR314MannyDataSheet/08-API/API/</loc>
+         <loc>https://mcastr11-collab.github.io/EGR314MannyDataSheet/06-Power%20Budget/Power-Budget/</loc>
+         <lastmod>2026-05-04</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://mcastr11-collab.github.io/EGR314MannyDataSheet/08-Schematic/schematic/</loc>
+         <lastmod>2026-05-04</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://mcastr11-collab.github.io/EGR314MannyDataSheet/09-API/API/</loc>
+         <lastmod>2026-05-04</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://mcastr11-collab.github.io/EGR314MannyDataSheet/10-Reflection/Reflection/</loc>
          <lastmod>2026-05-04</lastmod>
          <changefreq>daily</changefreq>
     </url>
