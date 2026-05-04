@@ -24,7 +24,7 @@ The objective of this project was to design and implement an embedded subsystem 
 
 Our team developed Sable, a ground-based search and rescue drone designed to assist in locating people or retrieving small objects in difficult terrain or in environments that would otherwise be hazardous or dangerous for humans.
 
-* If you wish to explore what my other teamates are doing for this project, please feel free to visit our [team report](https://egr314-s-2026-303.github.io/).
+>If you wish to explore what my other teamates are doing for this project, please feel free to visit our [team report](https://egr314-s-2026-303.github.io/).
 
 ### My Contribution
 
