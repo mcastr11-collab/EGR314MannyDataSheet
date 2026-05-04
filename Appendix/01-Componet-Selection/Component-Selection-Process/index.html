@@ -1315,6 +1315,123 @@
 </ol>
 <p><strong>Choice:</strong> Option 2: CTX936TR-ND surface mount oscillator</p>
 <p><strong>Rationale:</strong> A clock oscillator is easier to work with because it requires no external circuitry in order to interface with the PSoC. This is particularly important because we are not sure of the electrical characteristics of the PCB, which could affect the oscillation of a crystal. While the shipping speed is slow, according to the website if we order this week it will arrive within 3 weeks.</p>
+<p><strong>Antenna</strong></p>
+<ol>
+<li>
+<p>FXP74 4dBi Antenna</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../FXP74.png" data-desc-position="bottom"><img alt="" src="../FXP74.png"></a></p>
+<ul>
+<li>$4.02/each</li>
+<li><a href="https://www.digikey.com/en/products/detail/taoglas-limited/FXP74-07-0100A/3877416?gclsrc=aw.ds&amp;gad_source=1&amp;gad_campaignid=120565755&amp;gbraid=0AAAAADrbLlgZA-wfFkVjL0-pdZ33x8ABV&amp;gclid=Cj0KCQiA18DMBhDeARIsABtYwT08k87s1mwmgDJ7gRaUCMtLNKURm9b2yRdfqc_RSkHROIXoXmRWSU0aAqZBEALw_wcB">link to product</a></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Pros</th>
+<th>Cons</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Works with 2.4 GHz Wi-Fi</td>
+<td>50% efficient, placement is important</td>
+</tr>
+<tr>
+<td>Good peak gain at 4 dBi</td>
+<td>Single 2.4 GHz band</td>
+</tr>
+<tr>
+<td>Compact</td>
+<td>Not directional</td>
+</tr>
+<tr>
+<td>Flexible placement</td>
+<td></td>
+</tr>
+<tr>
+<td>Bluetooth compatible</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>FXP72 3dBi Antenna</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../FXP72.png" data-desc-position="bottom"><img alt="" src="../FXP72.png"></a></p>
+<ul>
+<li>$3.62/each</li>
+<li><a href="https://www.digikey.com/en/products/detail/taoglas-limited/FXP72-07-0053A/2332702?gclsrc=aw.ds&amp;gad_source=1&amp;gad_campaignid=120565755&amp;gbraid=0AAAAADrbLlgZA-wfFkVjL0-pdZ33x8ABV&amp;gclid=CjwKCAiA-sXMBhAOEiwAGGw6LAhgV2RVupQSf2ynJYEDeLKvd9Jyh3OxBOgERQCzDm_5qtmDbWKGuhoCGfYQAvD_BwE">link to product</a></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Pros</th>
+<th>Cons</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Higher efficiency 67%</td>
+<td>Physically larger</td>
+</tr>
+<tr>
+<td>Bigger antenna may be less affected by placement if away from metal</td>
+<td>Lower peak gain at 3 3.06 dBi</td>
+</tr>
+<tr>
+<td>Readily Available at approved vendors</td>
+<td>More expensive</td>
+</tr>
+<tr>
+<td>Very easy to adapt with FXP74</td>
+<td></td>
+</tr>
+<tr>
+<td>Bluetooth compatible</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>Molex 2069940100 3.6dBi Antenna</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../Molex.png" data-desc-position="bottom"><img alt="" src="../Molex.png"></a></p>
+<ul>
+<li>$1.95/each </li>
+<li><a href="https://www.digikey.com/en/products/detail/molex/2069940100/9450924">link to product</a></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Pros</th>
+<th>Cons</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Low cost</td>
+<td>Installation placemeent sensitive</td>
+</tr>
+<tr>
+<td>Good peak gain of 3.6 dBi</td>
+<td>Medium size</td>
+</tr>
+<tr>
+<td>Dual band compatible 2.4 &amp; 5 GHz</td>
+<td>Very low efficiency due to design type</td>
+</tr>
+<tr>
+<td>Bluetooth compatible</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</li>
+</ol>
+<p><strong>Justification</strong> <br>
+The usable wireless range of the camera subsystem is determined by the system link budget, which includes transmitter power, antenna gain, propagation loss, receiver sensitivity, and system losses. While the ESP32-S3 provides a fixed Wi-Fi transmit power, the use of an external antenna improves effective range by increasing antenna efficiency and allowing optimal placement away from noise sources. Environmental factors such as distance, obstructions, and multipath fading, significantly affect range at 2.4 GHz. Operating the camera in a low-resolution streaming mode reduces required data rate and improves receiver sensitivity, further extending usable range. This design approach supports a reliable near 30 m operating distance while remaining compliant with regulatory limits.</p>
+<p><strong>Rationale:</strong>
+Ideally if size is not a problem all 3 options would work, they all share the same U.FL cable connector, and have around the same gain. Any should be good alterntives in case availability becomes a problem. For cost option 3 would be the best, but since we are trying to pass through video content (QVGA/ VGA) it would be best to go with options 1 or 2. At this point it becomes a matter of which one works with our available space in the rover, so option one would be the safer choice if space is a concern.</p>
 
 
 
