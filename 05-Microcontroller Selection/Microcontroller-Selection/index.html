@@ -341,6 +341,26 @@
     
     
       <li class="md-tabs__item">
+        <a href="../../07-PCB/PCB/" class="md-tabs__link">
+          
+  
+    
+  
+  07 PCB
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
         <a href="../../08-Schematic/schematic/" class="md-tabs__link">
           
   
@@ -863,6 +883,52 @@
         
   
   
+    <a href="../../07-PCB/PCB/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    07 PCB
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
     <a href="../../08-Schematic/schematic/" class="md-nav__link">
       
   
@@ -1224,9 +1290,10 @@
 </tr>
 </tbody>
 </table>
-<p><strong>Subsystem Description</strong>
+<p><br></p>
+<p><strong>Subsystem Description</strong> <br>
 The camera subsystem provides a live video feed to the drone operator, enabling improved situational awareness and navigation in complex or hazardous environments. This subsystem captures image data from the onboard camera and transmits it wirelessly to a browser-based interface, allowing the operator to monitor the drone’s surroundings in real time.</p>
-<p><strong>Microcontroller Selection Rationale</strong></p>
+<p><strong>Microcontroller Selection Rationale</strong><br></p>
 <p>The ESP32-S3-WROOM-1-N4 was selected because it provides the combination of wireless communication, camera interface support, and GPIO availability required for the camera subsystem. Its integrated WiFi capability allows the subsystem to host a local access point and HTTP server, enabling the operator to view the live camera feed through a standard web browser without requiring additional communication hardware.</p>
 <p>The ESP32-S3 also supports the OV2640 camera sensor through a DVP (Digital Video Port) parallel interface for image data transfer and an SCCB (I²C-compatible) interface for configuration. In addition, the microcontroller provides sufficient GPIO resources to support the camera data bus, synchronization signals, reset and power-down control, UART communication, and LED status indicators.</p>
 <p>UART communication was a critical requirement for integration with the team’s subsystem daisy-chain network. The ESP32-S3 supports reliable UART communication while simultaneously maintaining WiFi functionality. This enables the system to separate high-bandwidth image transmission over WiFi from low-bandwidth telemetry and control messages over UART, improving overall system efficiency.</p>
