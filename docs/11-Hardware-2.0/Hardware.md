@@ -6,6 +6,11 @@ title: Hardware 2.0
 
 If I were to create a Version 2.0 of my camera subsystem hardware, one of the biggest improvements I would explore is replacing the ESP32-S3 and OV2640 camera module with a Raspberry Pi-based system and a higher-quality camera module. The current design successfully provides a live camera feed, but the ESP32-S3-WROOM-1-N4 used in my schematic does not include PSRAM. Because of this limitation, the system had to use lower-resolution grayscale image capture and software JPEG conversion to stream video. While this was sufficient for a working prototype, it limited image quality and frame rate substantially.
 
+<div align="center">
+  <img src="rgb.png" width="600">
+</div>
+<div align="center"> Figure 1 - Image Capture With Out of Box Settings<br><br>
+
 A Raspberry Pi would provide significantly more processing power, memory, and camera support than the ESP32-S3. This would allow the subsystem to stream higher-resolution video at or above 30 frames per second, which would improve the operator’s ability to identify obstacles, objects, and people around the drone. A higher-quality camera module would also improve image clarity, field of view, and low-light performance, which are important for search and rescue applications.
 
 This change would also improve the wireless video link. In the current design, the ESP32-S3 hosts a WiFi access point and HTTP server directly on the microcontroller. In a future design, a Raspberry Pi could support more advanced networking options, including stronger WiFi adapters, external antennas, or long-range wireless bridges. This would improve communication range and make the video feed more reliable in outdoor environments.
