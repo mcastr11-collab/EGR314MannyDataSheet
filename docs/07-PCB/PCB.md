@@ -72,13 +72,18 @@ Lastly, a common ground plane was used across the PCB to provide a stable refere
     </embed>
 </object><br><br>
 
+### PCB 3D Renders
+
+<div align="center">
+  <img src="SablePCBFront3d.png" width="600">
+</div>
+<div align="center"> Figure 5 - Front of Virtual PCB<br><br>
 
 
-mcastr11-collab/EGR314MannyDataSheet/docs/07-PCB/PCBASSYBOTTOM.jpeg
-mcastr11-collab/EGR314MannyDataSheet/docs/07-PCB/PCBASSYTOP.jpeg
-mcastr11-collab/EGR314MannyDataSheet/docs/07-PCB/PCBBOTTOM.jpeg
-mcastr11-collab/EGR314MannyDataSheet/docs/07-PCB/PCBTOP.jpeg
-
+<div align="center">
+  <img src="SablePCBback3d.png" width="600">
+</div>
+<div align="center"> Figure 6 - Rear of Virtual PCB<br><br>
 
 ## Resouces
 
