@@ -75,7 +75,7 @@ nav:
   - 02 Block Diagram: 02-Block-Diagram/Block-Diagram.md
   - 03 Component Selection: 03-Component-Selection/Component-Selection.md
   - 04 BOM: 04-BOM/BOM.md
-  - 05 Microcontroller Selection: 05-Microcontroller Selection/index.md
+  - 05 Microcontroller Selection: 05-Microcontroller Selection
   - 06 Power Budget: 06-Power Budget/Power-Budget.md
   - 07 PCB: 07-PCB/PCB.md
   - 08 Schematic: 08-Schematic/schematic.md
