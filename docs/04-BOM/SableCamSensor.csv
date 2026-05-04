@@ -1,0 +1,35 @@
+Bill of Materials (Sable Cam Sensor),,,,,,,,
+Reference,Qty,Value,DNP,Exclude from BOM,Exclude from Board,Footprint,Datasheet,Product Link
+"C2,C13",2,.33uF,,,,Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,https://product.tdk.com/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_automotive_general_en.pdf?ref_disty=mouser,https://www.mouser.com/ProductDetail/TDK/CGA4J2X7R1H334K125AA?qs=NRhsANhppD9xhHS%2Fi16W6w%3D%3D
+"C7,C8,C14,C17,C25,C26,C27",7,.1uF,,,,Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder,https://www.mouser.com/datasheet/3/72/1/C0603C104K3RACTU.pdf,https://www.mouser.com/ProductDetail/KEMET/C0603C104K3RACTU?qs=l5k%252BbMnNDklvfdneglCDAg%3D%3D
+C11,1,100uF,,,,Capacitor_SMD:CP_Elec_6.3x5.4,https://www.mouser.com/datasheet/3/72/1/EXV107M016A9GAA.pdf,https://www.mouser.com/ProductDetail/KEMET/EXV107M016A9GAA?qs=Z46kSA%2FmtFibApT0kGkw4A%3D%3D
+"C19,C21,C22,C23,C24",5,1uF,,,,Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder,https://www.mouser.com/datasheet/3/508/1/C0603C105K4RACTU.pdf,https://www.mouser.com/ProductDetail/KEMET/C0603C105K4RACTU?qs=STjISULpmtZNMAZGR4X39Q%3D%3D
+D1,1,Y_LED,,,,LED_SMD:LED_0201_0603Metric_Pad0.64x0.40mm_HandSolder,https://www.mouser.com/datasheet/3/350/1/Dialight_datasheet_599_Single_Color_0603.pdf,https://www.mouser.com/ProductDetail/Dialight/599-1080-147F?qs=4dK74SdgGtzvasvULEw6Gg%3D%3D
+D2,1,R_LED,,,,LED_SMD:LED_0201_0603Metric_Pad0.64x0.40mm_HandSolder,https://www.mouser.com/datasheet/3/350/1/Dialight_datasheet_599_Single_Color_0603.pdf,https://www.mouser.com/ProductDetail/Dialight/599-1080-147F?qs=4dK74SdgGtzvasvULEw6Gg%3D%3D
+D3,1,G_LED,,,,LED_SMD:LED_0201_0603Metric_Pad0.64x0.40mm_HandSolder,https://www.mouser.com/datasheet/3/350/1/Dialight_datasheet_599_Single_Color_0603.pdf,https://www.mouser.com/ProductDetail/Dialight/599-1080-147F?qs=4dK74SdgGtzvasvULEw6Gg%3D%3D
+"D4,D7",2,1N5819,,,,Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal,http://www.vishay.com/docs/88525/1n5817.pdf,https://www.mouser.com/ProductDetail/Diotec-Semiconductor/1N5819?qs=OlC7AqGiEDlzWAEqP18zhw%3D%3D
+D5,1,R_LED,,,,LED_SMD:LED_0201_0603Metric,https://www.mouser.com/datasheet/3/350/1/Dialight_datasheet_599_Single_Color_0603.pdf,https://www.mouser.com/ProductDetail/Dialight/599-1080-147F?qs=4dK74SdgGtzvasvULEw6Gg%3D%3D
+F1,1,1.2A,,,,Fuse:Fuse_1206_3216Metric,https://www.vishay.com/doc?28747,https://www.mouser.com/ProductDetail/Vishay-Beyschlag/MFU1206FF01250P100?qs=oI046glRurtveJdHBx3Mtg%3D%3D
+IC1,1,TLV70015DDCR,,,,footprints:SOT95P280X110-5N,https://www.ti.com/lit/gpn/tlv700,https://www.mouser.com/ProductDetail/Texas-Instruments/TLV70015DDCR?qs=6805eV47HhY7JEyTH45U8Q%3D%3D
+IC2,1,TPS7A0328PDBVR,,,,footprints:SOT95P280X145-5N,https://www.ti.com/lit/gpn/tps7a03,https://www.mouser.com/ProductDetail/595-TPS7A0328PDBVR
+J1,1,RX_01x08_Socket,,,,footprints:AMPHENOL_75869-332LF,Generic Male Pins,
+J2,1,TX_01x08_Socket,,,,footprints:AMPHENOL_75869-332LF,Generic Male Pins,
+J3,1,EXP_01x04_Socket,,,,Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical,Generic Male Pins,
+"J4,J10",2,USB_B_Micro,,,,footprints:CONN5_05JJ2R1800_JAE,https://www.mouser.com/datasheet/3/356/1/MB_0187E_DX4.pdf,https://www.mouser.com/ProductDetail/JAE-Electronics/DX4R005JJ2R1800?qs=ckml%252BxrUdjTvILfne%252B8EpQ%3D%3D
+J5,1,Barrel_Jack,,,,Connector_BarrelJack:BarrelJack_CUI_PJ-102AH_Horizontal,https://www.mouser.com/datasheet/3/6118/1/pj_102ah.pdf,https://www.mouser.com/ProductDetail/Same-Sky/PJ-102AH?qs=WyjlAZoYn50Yq4CrVLCXLw%3D%3D
+J6,1,CAM_FFC-FPC 24 Pin Socket,,,,footprints:CONN24X1_FH12-24S-0.5SH55_HIR,https://www.mouser.com/datasheet/3/731/1/FH12_24S_0.5SH_55_CL0586_0521_0_55_2DDrawing_0000987484.pdf,https://www.mouser.com/ProductDetail/Hirose-Connector/FH12-24S-0.5SH55?qs=Ux3WWAnHpjDGmuhYLgxkoQ%3D%3D
+J7,1,Exp_01x16_Socket,,,,Connector_PinHeader_2.54mm:PinHeader_1x16_P2.54mm_Vertical,Generic Female Socket,
+J8,1,Cam_01x24_Header,,,,Connector_PinHeader_2.54mm:PinHeader_1x24_P2.54mm_Vertical,Generic Female Socket,
+J9,1,EXP_01x13_Socket,,,,Connector_PinHeader_2.54mm:PinHeader_1x13_P2.54mm_Vertical,Generic Female Socket,
+J11,1,Extra_USB_B_Socket,,,,Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical,Generic Female Socket,
+JP1,1,B_Jack Jumper PW,,,,Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical,Generic Female Socket,
+"JP2,JP3",2,EN_Jumper PW,,,,Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical,Generic Female Socket,
+L1,1,100uH,,,,Inductor_SMD:L_7.3x7.3_H3.5,https://product.tdk.com/system/files/dam/doc/product/inductor/inductor/smd/catalog/inductor_automotive_power_clf7045ni-d_en.pdf?ref_disty=mouser,https://www.mouser.com/ProductDetail/TDK/CLF7045NIT-101M-D?qs=P8zzrVhehavFGt6dqQDb7A%3D%3D
+"R1,R2",2,4.7k,,,,Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder,https://www.mouser.com/catalog/specsheets/YAGEO_PYu_RC_Group_51_RoHS_L_12.pdf,https://www.mouser.com/ProductDetail/YAGEO/RC0603FR-074K7L?qs=gt6vzsuosg37y0l7Vt36bQ%3D%3D
+"R4,R16,R20,R21",4,10k,,,,Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder,https://www.mouser.com/catalog/specsheets/YAGEO_PYu_RC_Group_51_RoHS_L_12.pdf,https://www.mouser.com/ProductDetail/YAGEO/RC0603FR-0710KL?qs=grNVn54RoB%252B3GtjbJj3wJQ%3D%3D
+"R5,R6,R7,R10",4,330,,,,Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder,https://www.mouser.com/catalog/specsheets/YAGEO_PYu_RC_Group_51_RoHS_L_12.pdf,https://www.mouser.com/ProductDetail/YAGEO/RC0603FR-07330RL?qs=diQw95jMAeN1335dAOzMfg%3D%3D
+SW2,1,EN ESP_AUX,,,,Button_Switch_SMD:SW_SPST_TL3342,https://www.mouser.com/datasheet/3/315/1/TL3342F160QG.pdf,https://www.mouser.com/ProductDetail/E-Switch/TL3342F160QG?qs=6C6BR4UgC3N80rVVEktZJA%3D%3D
+SW3,1,Boot ESP_AUX,,,,Button_Switch_SMD:SW_SPST_TL3342,https://www.mouser.com/datasheet/3/315/1/TL3342F160QG.pdf,https://www.mouser.com/ProductDetail/E-Switch/TL3342F160QG?qs=6C6BR4UgC3N80rVVEktZJA%3D%3D
+"TP1,TP2,TP3,TP4,TP5,TP6,TP7,TP8,TP9,TP10,TP11",11,TestPoint,,,,TestPoint:TestPoint_Pad_1.0x1.0mm,N/A,
+U1,1,ESP32-S3_CAM,,,,footprints:ESP32-S3-WROOM-1_EXP,https://www.espressif.com/sites/default/files/documentation/esp32-s3-wroom-1_wroom-1u_datasheet_en.pdf,
+U4,1,LM2575D2T-3.3R4G,,,,footprints:D2PAK-5_ONS,https://www.onsemi.com/pdf/datasheet/lm2575-d.pdf,https://www.digikey.com/en/products/detail/onsemi/LM2575D2T-3-3R4G/1476688

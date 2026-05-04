@@ -46,10 +46,12 @@ Additionally, the ESP32 supports direct interfacing with camera modules through 
 | USB Programming     | USB Serial/JTAG / UART0 |      1 | USB D− GPIO19, USB D+ GPIO20, or UART0 TX/RX             |
 | WiFi                |              Integrated |      1 | Used for ESP32 access point and HTTP camera server       |
 
-**Subsystem Description**
+<br>
+
+**Subsystem Description** <br>
 The camera subsystem provides a live video feed to the drone operator, enabling improved situational awareness and navigation in complex or hazardous environments. This subsystem captures image data from the onboard camera and transmits it wirelessly to a browser-based interface, allowing the operator to monitor the drone’s surroundings in real time.
 
-**Microcontroller Selection Rationale**
+**Microcontroller Selection Rationale**<br>
 
 The ESP32-S3-WROOM-1-N4 was selected because it provides the combination of wireless communication, camera interface support, and GPIO availability required for the camera subsystem. Its integrated WiFi capability allows the subsystem to host a local access point and HTTP server, enabling the operator to view the live camera feed through a standard web browser without requiring additional communication hardware.
 
