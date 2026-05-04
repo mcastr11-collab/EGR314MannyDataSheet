@@ -909,11 +909,18 @@
   <h1>Module Schematic</h1>
 
 <h2 id="overview">Overview</h2>
-<p>This schematic is design to support .... (highlight functionally, power, and controller).</p>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../Screenshot.png" data-desc-position="bottom"><img alt="schematic" height:_300_="height:&quot;300;&quot;" src="../Screenshot.png" style="style" width:_350_="width:&quot;350&quot;"></a>
-<strong>Figure ##:</strong> Showing a example schematic.</p>
+<p>This schematic is designed to support the OV2640 camera sensor, a 3.3V, 1.5V, and a 2.8V DC power rails, micro USB bus for ease of programming, and several female headers for signal troubleshooting and future expansion.</p>
+<p>The 3.3VDC rail brings power to the ESP32-S3, the onboard LEDs, and it distributes power to the two downstream DC power rails of 1.5VDC and 2.8VDC. </p>
+<p>In addition to the 3.3VDC, the camera sensor specifies that AVDD &amp; DOVDD need to be at a range of 2.8VDC and DVDD needs 1.5VDC, which is where both of these specific power rails come in to provide the required power needed by the camera sensor. </p>
+<p>The schematic below shows all details needed to reproduce this subsystem with the specified components.</p>
+<object data="https://mcastr11-collab.github.io/EGR314MannyDataSheet/SableCamSensorv1.9schematic.pdf" type="application/pdf" width="700px" height="700px">
+    <embed src="https://egr304-203.github.io/sparkguard/Team203BlockDiagramFinal.pdf">
+        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="https://egr304-203.github.io/sparkguard/Team203BlockDiagramFinal.pdf">Download PDF</a>.</p>
+    
+</object>
+<p><br><br></p>
 <h2 id="resouces">Resouces</h2>
-<p>The schematic as a PDF download is available <a href="../ExampleSchematic.pdf"><em>here</em></a>, and the Zip folder of the project <a href="../dummyZip.zip"><em>here</em></a>.</p>
+<p>The schematic as a PDF download is available <a href="ExampleSchematic.pdf"><em>here</em></a>, and the Zip folder of the project <a href="../dummyZip.zip"><em>here</em></a>.</p>
 
 
 
