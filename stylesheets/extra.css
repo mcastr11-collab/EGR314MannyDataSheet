@@ -1,12 +1,28 @@
-article{
-    a {
-        font-style:italic;
-        }
+/* Links inside article */
+article a {
+  font-style: italic;
 }
 
-blockquote{
-    background: #ffc;
-    p,li{
-        color: var(--md-typeset-color);
-    }
+/* Blockquote styling */
+blockquote {
+  background: #ffc;
+}
+
+blockquote p,
+blockquote li {
+  color: var(--md-typeset-color);
+}
+
+/* Tabs styling */
+.md-typeset .md-tabs {
+  margin-top: 1rem;
+}
+
+.md-typeset .md-tabs__list {
+  display: flex;
+  gap: 10px;
+}
+
+.md-typeset .md-tabs__item {
+  padding: 5px 10px;
 }
