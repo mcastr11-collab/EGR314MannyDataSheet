@@ -655,6 +655,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#microcontroller-selection" class="md-nav__link">
+    <span class="md-ellipsis">
+      Microcontroller Selection
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -931,6 +940,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#microcontroller-selection" class="md-nav__link">
+    <span class="md-ellipsis">
+      Microcontroller Selection
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -968,7 +986,7 @@
 2.8 V Rail: Required for the OV2640 analog and I/O domains
 1.5 V Rail: Required for the OV2640 digital core</p>
 <p>Linear regulators were selected for the 2.8 V and 1.5 V rails to provide low-noise, stable voltage outputs necessary for proper camera operation. A switching 3.3 V regulator was chosen to power the ESP32 and its other sub components on the PCB.  Selecting the right components is critical for maintaining image quality, preventing signal instability, and for having a healthy power source for all components.</p>
-<p><em>2.8 V DC Regulator</em>*</p>
+<p><strong>2.8 V DC Regulator</strong></p>
 <ol>
 <li>TPS7A0328DBVR</li>
 </ol>
@@ -1153,7 +1171,7 @@
 </li>
 </ol>
 <p><strong>Rationale:</strong> The LM2575D2T-3.3R4G switching regulator was selected to generate the 3.3 V rail from the 9 V input due to its ability to efficiently step down higher voltages while supplying up to 1 A of current. This is sufficient to power the ESP32-S3 and associated peripherals during peak operation, including WiFi transmission. Additionally, this component is widely available, cost-effective, and well-documented, making it a practical choice for reliable implementation.</p>
-<p><strong>1.5VDC Regulator</strong></p>
+<p><strong>1.5 V DC Regulator</strong></p>
 <ol>
 <li>TLV70015DDCR</li>
 </ol>
@@ -1341,12 +1359,153 @@
 </li>
 </ol>
 <p><strong>Rationale:</strong> As a rover camera image quality is important, though lowering bandwith requirements would be more desired. Option 1 would be the choice to go with for this reason since it is also more simpler to configure due to many existing projects already using this camera. However, option 2 is a solid choice as an alternative since both the OV2640 and the OV5640 use the same connectors, the same pin out, and power requirements.</p>
-<p><strong>Microcontroller Selection</strong></p>
-<p>Microcontroller Selection</p>
+<h2 id="microcontroller-selection">Microcontroller Selection</h2>
+<p>ESP32 Information Table</p>
+<table>
+<thead>
+<tr>
+<th>ESP32</th>
+<th>Information</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Model ESP32-S3-WROOM-1-N4</td>
+<td></td>
+</tr>
+<tr>
+<td>Product Link</td>
+<td><a href="https://www.digikey.com/en/products/detail/espressif-systems/ESP32-S3-WROOM-1-N4/16162639">ESP32 Product Page</a></td>
+</tr>
+<tr>
+<td>Link to Datasheet</td>
+<td><a href="https://www.espressif.com/sites/default/files/documentation/esp32-s3-wroom-1_wroom-1u_datasheet_en.pdf">Datasheet</a></td>
+</tr>
+<tr>
+<td>Code examples</td>
+<td><a href="https://randomnerdtutorials.com/getting-started-with-esp32/">ESP32-S3 Example Code Projects</a></td>
+</tr>
+<tr>
+<td>Manufacturer Product Number</td>
+<td>ESP32-S3-WROOM-1-N4</td>
+</tr>
+<tr>
+<td>Unit Cost</td>
+<td>USD $5.21 at DigiKey price</td>
+</tr>
+<tr>
+<td>Supply Voltage Range</td>
+<td>3.0 V – 3.6 V</td>
+</tr>
+<tr>
+<td>Wireless Communication</td>
+<td>WiFi 802.11 b/g/n and Bluetooth 5</td>
+</tr>
+<tr>
+<td>Integrated Interfaces</td>
+<td>UART, I2C/SCCB, SPI, PWM, USB, camera interface</td>
+</tr>
+<tr>
+<td>Antenna</td>
+<td>PCB antenna</td>
+</tr>
+<tr>
+<td>Required Programming Hardware</td>
+<td>USB connection through USB Serial/JTAG or UART0 programmer</td>
+</tr>
+<tr>
+<td>Reason Selected</td>
+<td>Integrated WiFi, camera interface support, sufficient GPIO, and UART support</td>
+</tr>
+<tr>
+<td><br></td>
+<td></td>
+</tr>
+</tbody>
+</table>
 <p>The ESP32-S3 microcontroller was selected as the core of the subsystem due to its integrated WiFi capabilities, sufficient processing power, and extensive GPIO support. The ESP32 architecture provides dual-core processing and wireless communication, allowing it to handle image capture, processing, and web server hosting simultaneously.</p>
 <p>Additionally, the ESP32 supports direct interfacing with camera modules through parallel data lines and control interfaces, eliminating the need for additional hardware. Its ability to host an HTTP server enables direct communication with a browser client, simplifying system design and improving usability.</p>
-<p><strong>Resources Used</strong> <br>
-More on antenna types and applications <a href="https://www.digikey.com/en/articles/selecting-antennas-for-embedded-designs">here</a></p>
+<blockquote>
+<p>Below is a pin table of the ESP32-S3 I will be using.</p>
+</blockquote>
+<div align="center">
+  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="ESP32Pins.png" data-desc-position="bottom"><img src="ESP32Pins.png" width="600"></a>
+</div>
+<p><br><br></p>
+<blockquote>
+<p>The following table contains the pins my components will be using on my ESP32-S3.<br></p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Module / Interface</th>
+<th style="text-align: right;"># Available on ESP32-S3</th>
+<th style="text-align: right;">Needed</th>
+<th>Associated Pins in Camera Subsystem</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Camera DVP Data Bus</td>
+<td style="text-align: right;">1 camera interface</td>
+<td style="text-align: right;">1</td>
+<td>GPIO4, GPIO5, GPIO6, GPIO7, GPIO8, GPIO9, GPIO14, GPIO15</td>
+</tr>
+<tr>
+<td>Camera Sync / Clock</td>
+<td style="text-align: right;">GPIO capable pins</td>
+<td style="text-align: right;">4</td>
+<td>XCLK GPIO10, PCLK GPIO11, VSYNC GPIO12, HREF GPIO13</td>
+</tr>
+<tr>
+<td>SCCB / I2C Control</td>
+<td style="text-align: right;">2 I2C controllers</td>
+<td style="text-align: right;">1</td>
+<td>SDA GPIO16, SCL GPIO17</td>
+</tr>
+<tr>
+<td>UART</td>
+<td style="text-align: right;">3 UART controllers</td>
+<td style="text-align: right;">1</td>
+<td>TX GPIO39, RX GPIO40</td>
+</tr>
+<tr>
+<td>Camera Control GPIO</td>
+<td style="text-align: right;">GPIO capable pins</td>
+<td style="text-align: right;">2</td>
+<td>PWDN GPIO18, RESET GPIO21</td>
+</tr>
+<tr>
+<td>LED Indicators</td>
+<td style="text-align: right;">GPIO capable pins</td>
+<td style="text-align: right;">3</td>
+<td>Yellow GPIO48, Red GPIO42, Green GPIO47</td>
+</tr>
+<tr>
+<td>USB Programming</td>
+<td style="text-align: right;">USB Serial/JTAG / UART0</td>
+<td style="text-align: right;">1</td>
+<td>USB D− GPIO19, USB D+ GPIO20, or UART0 TX/RX</td>
+</tr>
+<tr>
+<td>WiFi</td>
+<td style="text-align: right;">Integrated</td>
+<td style="text-align: right;">1</td>
+<td>Used for ESP32 access point and HTTP camera server</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Subsystem Description</strong>
+The camera subsystem provides a live video feed to the drone operator, enabling improved situational awareness and navigation in complex or hazardous environments. This subsystem captures image data from the onboard camera and transmits it wirelessly to a browser-based interface, allowing the operator to monitor the drone’s surroundings in real time.</p>
+<p><strong>Microcontroller Selection Rationale</strong></p>
+<p>The ESP32-S3-WROOM-1-N4 was selected because it provides the combination of wireless communication, camera interface support, and GPIO availability required for the camera subsystem. Its integrated WiFi capability allows the subsystem to host a local access point and HTTP server, enabling the operator to view the live camera feed through a standard web browser without requiring additional communication hardware.</p>
+<p>The ESP32-S3 also supports the OV2640 camera sensor through a DVP (Digital Video Port) parallel interface for image data transfer and an SCCB (I²C-compatible) interface for configuration. In addition, the microcontroller provides sufficient GPIO resources to support the camera data bus, synchronization signals, reset and power-down control, UART communication, and LED status indicators.</p>
+<p>UART communication was a critical requirement for integration with the team’s subsystem daisy-chain network. The ESP32-S3 supports reliable UART communication while simultaneously maintaining WiFi functionality. This enables the system to separate high-bandwidth image transmission over WiFi from low-bandwidth telemetry and control messages over UART, improving overall system efficiency.</p>
+<p>Finally, the ESP32-S3-WROOM-1-N4 was readily available within the project environment and provided a flexible, easy to program, and well-documented platform. Since it met all subsystem requirements while simplifying integration and development, I selected it my choice of microcontroller.</p>
+<p><strong>Resources</strong> <br></p>
+<blockquote>
+<p>If you need the zipped source files for the component selection or any other files for this project, please see the <a href="https://mcastr11-collab/EGR314MannyDataSheet/Appendix/Resources">Resources</a> section.</p>
+</blockquote>
 
 
 
