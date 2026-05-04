@@ -36,7 +36,7 @@ With this I was able to get the camera to a 320X240 resolution and a steady two 
 With a [XIAO ESP32-S3 Sense](https://www.seeedstudio.com/XIAO-ESP32S3-Sense-p-5639.html?srsltid=AfmBOortHAxCDHRj2DqrsT-MoDrvqRXKZZhuzxsczGOoQUfZg3wF8nEA), I was able to do straight JPEG captures without the need of having software conversion as the middle man. The stream was also more usable at to over ten frames per second with QVGA. This is due to the onboard 8 MB of PSRAM that helps the ESP32 store more frames that are then sent over to the HTTP server. Below is a screenshot of the sensor in use.
 
 <div align="center">
-  <img src="sable cam page.png" width="600">
+  <img src="sablecampage.png" width="600">
 </div>
 <div align="center"> Figure 4 - JPEG Capture With XIAO ESP32-S3 Sense<br><br>
 
