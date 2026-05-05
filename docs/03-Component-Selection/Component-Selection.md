@@ -257,4 +257,4 @@ The selection of components for the camera subsystem was guided by requirements 
 
 **Resources** <br>
 
->If you need the zipped source files for the component selection or any other files for this project, please see the [Resources](https://mcastr11-collab.github.io/EGR314MannyDataSheet/Appendix/Resources/) section.
+>If you need the zipped source files for the component selection or any other files for this project, please see the [Resources](Appendix/index.md) section.
