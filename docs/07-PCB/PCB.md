@@ -30,6 +30,7 @@ Critical components were placed first, including the ESP32-S3 and camera connect
 Traces were routed to connect all components while maintaining signal integrity and avoiding interference. Special attention was given to power and ground routing to ensure stable operation.
 * Validation:
 Design Rule Checks (DRC) and Electrical Rule Checks (ERC) were performed to ensure the PCB met manufacturing and electrical constraints before fabrication.
+<br>
 
 ![PCB](PCBBOTTOM.jpeg){style width:"350" height:"300;"}
 
@@ -51,6 +52,7 @@ Lastly, a common ground plane was used across the PCB to provide a stable refere
 ### Design Outcomes
 
 ![PCB](PCBASSYTOP.jpeg){style width:"350" height:"300;"}
+
 <div align="center">Figure 3 - Top View of Assembled PCB<br><br></div>
 
 <div align="Left"> The final PCB design successfully integrates all required components into a compact and functional layout. The design supports reliable camera operation, stable power delivery, and communication with other subsystems through UART and WiFi. Additionally, the design is manufacturable using standard PCB fabrication processes and supports straightforward assembly.<br><br></div>
