@@ -57,18 +57,7 @@ extra_css:
 extra_javascript:
  - javascripts/mathjax.js
  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
-    
-not_in_nav: |
-  static
-  
-copyright: "Copyright &copy; 2026 Manuel Castro"
-
-extra:
-  generator: false
-  social:
-    - icon: fontawesome/regular/file-code
-      link: /2026_spring
-      name: 2023 Site    
+   
 nav:
   - Home: index.md
   - 01 Requirements: 01-Requirements/Requirements.md
@@ -82,5 +71,18 @@ nav:
   - 09 API: 09-API/API.md
   - 10 Reflection: 10-Reflection/Reflection.md
   - 11 Hardware V2: 11-Hardware-V2/Hardware.md
-  - Appendix: Appendix/Resources.md
+  - Appendix: Appendix/index.md
+
+not_in_nav: |
+  static
+
+copyright: "Copyright &copy; 2026 Manuel Castro"
+
+extra:
+  generator: false
+  social:
+    - icon: fontawesome/regular/file-code
+      link: /2026_spring
+      name: 2023 Site    
+
   

@@ -8,4 +8,5 @@ Look at the "Resources" page for an achive of all used files and documents on th
 
 ## Appendix Content
 
-* [Files & Resources](https://mcastr11-collab/EGR314MannyDataSheet/docs/Appendix/Resources.md)
+* [Files & Resources](https://mcastr11-collab/EGR314MannyDataSheet/docs/Appendix/Resources)
+* [Files & Resources2](https://mcastr11-collab/EGR314MannyDataSheet/docs/Appendix/Resources.md)
