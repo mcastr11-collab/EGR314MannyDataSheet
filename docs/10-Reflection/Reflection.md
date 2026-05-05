@@ -14,35 +14,44 @@ There was a learning curve in order to progress from my first image capture to s
 
 Initially, the camera output appeared highly distorted and unusable due to incorrect default configuration settings and the memory limitations of the ESP32-S3 with no PSRAM. This was captured using the RGB picture capture formaw with exposure settings on auto. As you can see from the image below, it is close to imposible to make out shapes using this method.
 
-![PCB](rgb.png)
+<div align="center">
+  <img src="/EGR314MannyDataSheet/10-Reflection/rgb.png" width="600" height="450">
+  <br>
+  <b>Figure 1 - RGB Capture With Out-of-Box Settings</b>
 </div>
-<div align="center"> Figure 1 - RGB Capture With Out-of-Box Settings<br><br>
-<div align="Left"><br>
+<br><br>
+
 As I spent more time experimenting with different camera image capture settings, I realized full color was not going to be a feasable option since the lack of PSRAM meant that colored images would have a three to five second delay between frames, which was not ideal.<br><br>
 <br>
 
-![PCB](grayscaleoutofbox.png)
-
-<div align="center"> Figure 2 - Grayscale Capture Without Configuring the Camera<br><br>
+<div align="center">
+  <img src="/EGR314MannyDataSheet/10-Reflection/grayscaleoutofbox.png" width="600" height="450">
+  <br>
+  <b>Figure 2 - Grayscale Capture Without Configuring the Camera</b>
 </div>
-<div align="Left"><br></div>
+<br><br>
+
 Switching over to gray scale introduced other challenges as now lighting over exposed the camera lens, and it was a battle to get the image to something more usable like what I was able to achieve below. The image above was where I first started experimenting with grayscale, and below is after a few hours of looking through GitHub repositories for suggestions on how to get the most out of the camera sensor for my application.
 <br>
 
-![PCB](grayscaletuned.png)
-
-<div align="center"> Figure 3 - Grayscale Capture With QVGA<br><br>
+<div align="center">
+  <img src="/EGR314MannyDataSheet/10-Reflection/grayscaletuned.png" width="600" height="450">
+  <br>
+  <b>Figure 3 - Grayscale Capture With QVGA</b>
 </div>
-<div align="Left"><br></div>
+<br><br>
+
 Eventually, I was able to get the camera to a 320X240 resolution and a steady two frames per second. The framerate could improve if I reduced the image quality a bit from QVGA to QQVGA, which is 160X120 resolution. Although, I found the stability of the framerate to be adequate enough for the working prototype.<br><br>
 
-Later, I experimented with a [XIAO ESP32-S3 Sense](https://www.seeedstudio.com/XIAO-ESP32S3-Sense-p-5639.html?srsltid=AfmBOortHAxCDHRj2DqrsT-MoDrvqRXKZZhuzxsczGOoQUfZg3wF8nEA), I was able to do straight full color JPEG captures without the need of having software conversion as the middle man. The stream was also more usable at to over ten frames per second with QVGA. This is due to the onboard 8 MB of PSRAM that helps the ESP32 store more frames that are then sent over to the HTTP server. Below is a screenshot of the XIAO sensor in use.<br>
+Later, I experimented with a [XIAO ESP32-S3 Sense](https://www.seeedstudio.com/XIAO-ESP32S3-Sense-p-5639.html). I was able to do straight full color JPEG captures without the need of having software conversion as the middle man. The stream was also more usable at to over ten frames per second with QVGA. This is due to the onboard 8 MB of PSRAM that helps the ESP32 store more frames that are then sent over to the HTTP server. Below is a screenshot of the XIAO sensor in use.<br>
 <br>
 
-![PCB](sablecampage.png)
-
-<div align="center"> Figure 4 - JPEG Capture With XIAO ESP32-S3 Sense<br><br>
-<div align="Left"><br>
+<div align="center">
+  <img src="/EGR314MannyDataSheet/10-Reflection/sablecampage.png" width="600" height="450">
+  <br>
+  <b>Figure 4 - JPEG Capture With XIAO ESP32-S3 Sense</b>
+</div>
+<br><br>
 
 As you can see, the image distortion is minimal and the framerate and resolution scare are very usable. If I were to approach this design again, a similar microcontroller with PSRAM would be the ideal choice.
 
