@@ -940,24 +940,30 @@ Traces were routed to connect all components while maintaining signal integrity 
 Design Rule Checks (DRC) and Electrical Rule Checks (ERC) were performed to ensure the PCB met manufacturing and electrical constraints before fabrication.
 <br></li>
 </ul>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../PCBBOTTOM.jpeg" data-desc-position="bottom"><img alt="PCB" height:_300_="height:&quot;300;&quot;" src="../PCBBOTTOM.jpeg" style="style" width:_350_="width:&quot;350&quot;"></a></p>
-<div align="center">Figure 2 - Bottom View of Bare PCB<br><br></div>
-
-
+<div align="center">
+  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="/EGR314MannyDataSheet/07-PCB/PCBBOTTOM.jpeg" data-desc-position="bottom"><img src="/EGR314MannyDataSheet/07-PCB/PCBBOTTOM.jpeg" width="600" height="450"></a>
+  <br>
+  <b>Figure 2 - Bottom View of Bare PCB</b>
+</div>
+<p><br><br></p>
 <h3 id="key-considerations">Key Considerations</h3>
 <p>Several important design decisions were made to ensure proper functionality and reliability. </p>
 <p>The PCB includes multiple voltage rails (3.3 V, 2.8 V, and 1.5 V). Wide traces and proper decoupling capacitors were used to ensure stable power delivery. Sensitive camera power rails (2.8 V and 1.5 V) were separated from the switching regulator to reduce noise.</p>
 <p>The OV2640 camera uses a parallel DVP interface, which requires multiple data lines and synchronization signals. These signals were kept short and routed together to reduce timing mismatches and noise.</p>
 <p>Lastly, a common ground plane was used across the PCB to provide a stable reference and reduce electrical noise. This is especially important for the camera sensor and high-speed signals. All components were grouped by funtciont in order to reduce interference with camera components and improve routing efficiency.</p>
 <h3 id="design-outcomes">Design Outcomes</h3>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../PCBASSYTOP.jpeg" data-desc-position="bottom"><img alt="PCB" height:_300_="height:&quot;300;&quot;" src="../PCBASSYTOP.jpeg" style="style" width:_350_="width:&quot;350&quot;"></a></p>
-<div align="center">Figure 3 - Top View of Assembled PCB<br><br></div>
-
-<div align="Left"> The final PCB design successfully integrates all required components into a compact and functional layout. The design supports reliable camera operation, stable power delivery, and communication with other subsystems through UART and WiFi. Additionally, the design is manufacturable using standard PCB fabrication processes and supports straightforward assembly.<br><br></div>
-
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../PCBASSYBOTTOM.jpeg" data-desc-position="bottom"><img alt="PCB" height:_300_="height:&quot;300;&quot;" src="../PCBASSYBOTTOM.jpeg" style="style" width:_350_="width:&quot;350&quot;"></a></p>
-<div align="center">Figure 4 - Bottom View of Assembled PCB<br><br></div>
-
+<div align="center">
+  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="/EGR314MannyDataSheet/07-PCB/PCBASSYTOP.jpeg" data-desc-position="bottom"><img src="/EGR314MannyDataSheet/07-PCB/PCBASSYTOP.jpeg" width="600" height="450"></a>
+  <br>
+  <b>Figure 3 - Top View of Assembled PCB</b>
+</div>
+<p><br><br></p>
+<p>The final PCB design successfully integrates all required components into a compact and functional layout. The design supports reliable camera operation, stable power delivery, and communication with other subsystems through UART and WiFi. Additionally, the design is manufacturable using standard PCB fabrication processes and supports straightforward assembly.<br><br></p>
+<div align="center">
+  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="/EGR314MannyDataSheet/07-PCB/PCBBOTTOM.jpeg" data-desc-position="bottom"><img src="/EGR314MannyDataSheet/07-PCB/PCBBOTTOM.jpeg" width="600" height="450"></a>
+  <br>
+  <b>Figure 4 - Bottom View of Assembled PCB</b>
+</div>
 <p><br><br></p>
 <blockquote>
 <p>Below you will find the PCB view on PDF with all layers turned on.</p>
