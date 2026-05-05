@@ -51,6 +51,12 @@ Lastly, a common ground plane was used across the PCB to provide a stable refere
 
 ### Design Outcomes
 
+
+
+<div align="center">
+  <img src="PCBASSYTOP.jpeg" width="600">
+</div>
+
 <div align="center">
   <img src="PCBASSYTOP.jpeg" width="600">
 </div>
