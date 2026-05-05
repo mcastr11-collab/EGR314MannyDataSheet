@@ -4,15 +4,15 @@ title: Module PCB
 
 ## Overview
 
-The PCB for the camera subsystem was designed to integrate the ESP32-S3 microcontroller, OV2640 camera interface, power regulation circuitry, and communication interfaces into a compact and manufacturable layout. The design process began with schematic capture, followed by component placement and routing to ensure proper electrical performance and reliability. PCB design serves as the physical implementation of the circuit, connecting components through conductive traces and allowing signals and power to be distributed across the system.
+The PCB for the camera subsystem was designed to integrate the ESP32-S3 microcontroller, OV2640 camera interface, power regulation circuitry, and communication interfaces into a compact and manufacturable layout. The design process began with schematic capture, followed by component placement and routing to ensure proper electrical performance and reliability. PCB design serves as the physical implementation of the circuit, connecting components through conductive traces and allowing signals and power to be distributed across the system.<br>
 
-
-![PCB](PCBTOP.jpeg){style width:"350" height:"300;"}
-
-
-<div align="center">Figure 1 - Top View of Bare PCB<br><br></div>
-
+<div align="center">
+  <img src="PCBTOP.jpeg" width="350" height="300">
+  <br>
+  <b>Figure 1 - Top View of Bare PCB</b>
 </div>
+
+
 <div align="Left"><br><br>
 
 **Design Process**
