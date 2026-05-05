@@ -29,9 +29,12 @@ Additionally, the ESP32 supports direct interfacing with camera modules through 
 >Below is a pin table of the ESP32-S3 I will be using.
 
 <div align="center">
-  <img src="ESP32Pins.png" width="600">
+  <img src="/EGR314MannyDataSheet/05-Microcontroller Selection/ESP32Pins.png" width="600" height="450">
+  <br>
+  <b>Figure 1 - ESP32-S3 Pin Diagram</b>
 </div>
 <br><br>
+
 
 >The following table contains the pins my components will be using on my ESP32-S3.<br>
 

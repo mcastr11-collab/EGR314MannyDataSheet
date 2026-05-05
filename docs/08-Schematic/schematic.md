@@ -13,7 +13,7 @@ In addition to the 3.3VDC, the camera sensor specifies that AVDD & DOVDD need to
 The schematic below shows all details needed to reproduce this subsystem with the specified components.
 
 
-<object data="https://mcastr11-collab.github.io/EGR314MannyDataSheet/05-Schematic/SableCamSensorv1.9schematic.pdf" type="application/pdf" width="700px" height="700px">
+<object data="https://mcastr11-collab.github.io/EGR314MannyDataSheet/08-Schematic/SableCamSensorv1.9schematic.pdf" type="application/pdf" width="700px" height="700px">
     <embed src="https://egr304-203.github.io/sparkguard/Team203BlockDiagramFinal.pdf">
         <p>This browser does not support PDFs. Please download the PDF to view it: <a href="https://egr304-203.github.io/sparkguard/Team203BlockDiagramFinal.pdf">Download PDF</a>.</p>
     </embed>
