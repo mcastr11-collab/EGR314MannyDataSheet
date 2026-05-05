@@ -663,6 +663,48 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Overview">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#key-considerations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Considerations
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#design-outcomes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Design Outcomes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pcb-3d-renders" class="md-nav__link">
+    <span class="md-ellipsis">
+      PCB 3D Renders
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#resouces" class="md-nav__link">
+    <span class="md-ellipsis">
+      Resouces
+    </span>
+  </a>
+  
 </li>
       
     </ul>
@@ -804,6 +846,48 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Overview">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#key-considerations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Considerations
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#design-outcomes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Design Outcomes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pcb-3d-renders" class="md-nav__link">
+    <span class="md-ellipsis">
+      PCB 3D Renders
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#resouces" class="md-nav__link">
+    <span class="md-ellipsis">
+      Resouces
+    </span>
+  </a>
+  
 </li>
       
     </ul>
@@ -836,9 +920,9 @@
 <div align="center">
   <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="PCBTOP.jpeg" data-desc-position="bottom"><img src="PCBTOP.jpeg" width="600"></a>
 </div>
-<div align="center"> Figure 1 - Top View of Bare PCB<br><br>
+<div align="center">Figure 1 - Top View of Bare PCB<br><br></div>
 
-</div>
+
 <div align="Left"><br><br>
 
 **Design Process**
@@ -860,68 +944,54 @@ Design Rule Checks (DRC) and Electrical Rule Checks (ERC) were performed to ensu
 <div align="center">
   <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="PCBBOTTOM.jpeg" data-desc-position="bottom"><img src="PCBBOTTOM.jpeg" width="600"></a>
 </div>
-<div align="center"> Figure 2 - Bottom View of Bare PCB<br><br>
+<div align="center">Figure 2 - Bottom View of Bare PCB<br><br></div>
 
 </div>
 
-### Key Considerations
-
-Several important design decisions were made to ensure proper functionality and reliability. 
-
-The PCB includes multiple voltage rails (3.3 V, 2.8 V, and 1.5 V). Wide traces and proper decoupling capacitors were used to ensure stable power delivery. Sensitive camera power rails (2.8 V and 1.5 V) were separated from the switching regulator to reduce noise.
-
-The OV2640 camera uses a parallel DVP interface, which requires multiple data lines and synchronization signals. These signals were kept short and routed together to reduce timing mismatches and noise.
-
-Lastly, a common ground plane was used across the PCB to provide a stable reference and reduce electrical noise. This is especially important for the camera sensor and high-speed signals. All components were grouped by funtciont in order to reduce interference with camera components and improve routing efficiency.
-
-
-### Design Outcomes
-
-
-
+<h3 id="key-considerations">Key Considerations</h3>
+<p>Several important design decisions were made to ensure proper functionality and reliability. </p>
+<p>The PCB includes multiple voltage rails (3.3 V, 2.8 V, and 1.5 V). Wide traces and proper decoupling capacitors were used to ensure stable power delivery. Sensitive camera power rails (2.8 V and 1.5 V) were separated from the switching regulator to reduce noise.</p>
+<p>The OV2640 camera uses a parallel DVP interface, which requires multiple data lines and synchronization signals. These signals were kept short and routed together to reduce timing mismatches and noise.</p>
+<p>Lastly, a common ground plane was used across the PCB to provide a stable reference and reduce electrical noise. This is especially important for the camera sensor and high-speed signals. All components were grouped by funtciont in order to reduce interference with camera components and improve routing efficiency.</p>
+<h3 id="design-outcomes">Design Outcomes</h3>
 <div align="center">
   <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="PCBASSYTOP.jpeg" data-desc-position="bottom"><img src="PCBASSYTOP.jpeg" width="600"></a>
 </div>
+<div align="center">Figure 3 - Top View of Assembled PCB<br><br></div>
 
-<div align="center">
-  <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="PCBASSYTOP.jpeg" data-desc-position="bottom"><img src="PCBASSYTOP.jpeg" width="600"></a>
-</div>
-<div align="center"> Figure 3 - Top View of Assembled PCB<br><br>
-
-<div align="Left"> The final PCB design successfully integrates all required components into a compact and functional layout. The design supports reliable camera operation, stable power delivery, and communication with other subsystems through UART and WiFi. Additionally, the design is manufacturable using standard PCB fabrication processes and supports straightforward assembly.<br><br>
+<div align="Left"> The final PCB design successfully integrates all required components into a compact and functional layout. The design supports reliable camera operation, stable power delivery, and communication with other subsystems through UART and WiFi. Additionally, the design is manufacturable using standard PCB fabrication processes and supports straightforward assembly.<br><br></div>
 
 <div align="center">
   <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="PCBASSYBOTTOM.jpeg" data-desc-position="bottom"><img src="PCBASSYBOTTOM.jpeg" width="600"></a>
 </div>
-<div align="center"> Figure 4 - Bottom View of Assembled PCB
+<div align="center">Figure 4 - Bottom View of Assembled PCB<br><br></div>
 
-<br><br>
-&gt;Below you will find the PCB view on PDF with all layers turned on.
-
+<p><br><br></p>
+<blockquote>
+<p>Below you will find the PCB view on PDF with all layers turned on.</p>
+</blockquote>
 <object data="https://mcastr11-collab.github.io/EGR314MannyDataSheet/07-PCB/SablePCBalllayers.pdf" type="application/pdf" width="700px" height="700px">
     <embed src="https://egr304-203.github.io/sparkguard/Team203BlockDiagramFinal.pdf">
         <p>This browser does not support PDFs. Please download the PDF to view it: <a href="https://egr304-203.github.io/sparkguard/Team203BlockDiagramFinal.pdf">Download PDF</a>.</p>
     
-</object><br><br>
-
-### PCB 3D Renders
-
+</object>
+<p><br><br></p>
+<h3 id="pcb-3d-renders">PCB 3D Renders</h3>
 <div align="center">
   <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="SablePCBFront3d.png" data-desc-position="bottom"><img src="SablePCBFront3d.png" width="600"></a>
 </div>
-<div align="center"> Figure 5 - Front of Virtual PCB<br><br>
-
+<div align="center"> Figure 5 - Front of Virtual PCB<br><br></div>
 
 <div align="center">
   <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="SablePCBback3d.png" data-desc-position="bottom"><img src="SablePCBback3d.png" width="600"></a>
 </div>
-<div align="center"> Figure 6 - Rear of Virtual PCB<br><br>
+<div align="center"> Figure 6 - Rear of Virtual PCB<br><br></div>
 
-## Resouces
-
-The PCB as a PDF download is available [*here*](SableCamSensorv1.9schematic.pdf).
-
-&gt;If you need the zipped source files for the schematic or any other files for this project, please see the [Resources](https://mcastr11-collab/EGR314MannyDataSheet/Appendix/Resources) section.</div></div></div></div></div></div>
+<h2 id="resouces">Resouces</h2>
+<p>The PCB as a PDF download is available <a href="SableCamSensorv1.9schematic.pdf"><em>here</em></a>.</p>
+<blockquote>
+<p>If you need the zipped source files for the schematic or any other files for this project, please see the <a href="https://mcastr11-collab/EGR314MannyDataSheet/Appendix/Resources">Resources</a> section.</p>
+</blockquote>
 
 
 
