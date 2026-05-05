@@ -7,9 +7,7 @@ title: Module PCB
 The PCB for the camera subsystem was designed to integrate the ESP32-S3 microcontroller, OV2640 camera interface, power regulation circuitry, and communication interfaces into a compact and manufacturable layout. The design process began with schematic capture, followed by component placement and routing to ensure proper electrical performance and reliability. PCB design serves as the physical implementation of the circuit, connecting components through conductive traces and allowing signals and power to be distributed across the system.
 
 
-<div align="center">
-  <img src="PCBTOP.jpeg" width="600">
-</div>
+![PCB](PCBTOP.jpeg){style width:"350" height:"300;"}
 
 
 <div align="center">Figure 1 - Top View of Bare PCB<br><br></div>
@@ -33,9 +31,8 @@ Traces were routed to connect all components while maintaining signal integrity 
 * Validation:
 Design Rule Checks (DRC) and Electrical Rule Checks (ERC) were performed to ensure the PCB met manufacturing and electrical constraints before fabrication.
 
-<div align="center">
-  <img src="PCBBOTTOM.jpeg" width="600">
-</div>
+![PCB](PCBBOTTOM.jpeg){style width:"350" height:"300;"}
+
 <div align="center">Figure 2 - Bottom View of Bare PCB<br><br></div>
 
 </div>
@@ -53,16 +50,12 @@ Lastly, a common ground plane was used across the PCB to provide a stable refere
 
 ### Design Outcomes
 
-<div align="center">
-  <img src="PCBASSYTOP.jpeg" width="600">
-</div>
+![PCB](PCBASSYTOP.jpeg){style width:"350" height:"300;"}
 <div align="center">Figure 3 - Top View of Assembled PCB<br><br></div>
 
 <div align="Left"> The final PCB design successfully integrates all required components into a compact and functional layout. The design supports reliable camera operation, stable power delivery, and communication with other subsystems through UART and WiFi. Additionally, the design is manufacturable using standard PCB fabrication processes and supports straightforward assembly.<br><br></div>
 
-<div align="center">
-  <img src="PCBASSYBOTTOM.jpeg" width="600">
-</div>
+![PCB](PCBASSYBOTTOM.jpeg){style width:"350" height:"300;"}
 <div align="center">Figure 4 - Bottom View of Assembled PCB<br><br></div>
 
 <br><br>
@@ -76,15 +69,10 @@ Lastly, a common ground plane was used across the PCB to provide a stable refere
 
 ### PCB 3D Renders
 
-<div align="center">
-  <img src="SablePCBFront3d.png" width="600">
-</div>
+![PCB](SablePCBFront3d.png){style width:"350" height:"300;"}
 <div align="center"> Figure 5 - Front of Virtual PCB<br><br></div>
 
-
-<div align="center">
-  <img src="SablePCBback3d.png" width="600">
-</div>
+![PCB](SablePCBback3d.png){style width:"350" height:"300;"}
 <div align="center"> Figure 6 - Rear of Virtual PCB<br><br></div>
 
 ## Resouces
