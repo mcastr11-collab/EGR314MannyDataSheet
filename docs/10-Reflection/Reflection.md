@@ -10,40 +10,47 @@ However, some requirements were not fully achieved. The video quality and frame 
 
 There was a learning curve in order to progress from my first image capture to something more usable down the line. The configuration and tuning of the OV2640 camera settings as I discovered was not as straightforward as I hoped. The camera did have auto exposure settings, but it took me a while to find the right thread that had good baseline configuration that I could start working from. 
 
-The initial camera output appeared highly distorted and unusable due to incorrect default configuration settings and the memory limitations of the ESP32-S3 with no PSRAM.
+## Working Through Configuring the Camera Sensor
+
+Initially, the camera output appeared highly distorted and unusable due to incorrect default configuration settings and the memory limitations of the ESP32-S3 with no PSRAM. This was captured using the RGB picture capture formaw with exposure settings on auto. As you can see from the image below, it is close to imposible to make out shapes using this method.
 
 <div align="center">
   <img src="rgb.png" width="600">
 </div>
 <div align="center"> Figure 1 - RGB Capture With Out-of-Box Settings<br><br>
-
-As time went on I realized color was not going to be possible since not having PSRAM meant that colored images would have a three to five second delay between frames, which was not ideal.
+<div align="Left"><br>
+As I spent more time experimenting with different camera image capture settings, I realized full color was not going to be a feasable option since the lack of PSRAM meant that colored images would have a three to five second delay between frames, which was not ideal.<br><br>
 
 <div align="center">
   <img src="grayscaleoutofbox.png" width="600">
 </div>
 <div align="center"> Figure 2 - Grayscale Capture Without Configuring the Camera<br><br>
-
-Switching over to gray scale introduced other challenges as now lighting over exposed the camera lens, and it was a battle to get the image to something more usable like what I was able to achieve below.
+</div>
+<div align="Left"><br>
+Switching over to gray scale introduced other challenges as now lighting over exposed the camera lens, and it was a battle to get the image to something more usable like what I was able to achieve below. The image above was where I first started experimenting with grayscale, and below is after a few hours of looking through GitHub repositories for suggestions on how to get the most out of the camera sensor for my application.
 
 <div align="center">
   <img src="grayscaletuned.png" width="600">
 </div>
 <div align="center"> Figure 3 - Grayscale Capture With QVGA<br><br>
+</div>
+<div align="Left"><br>
+Eventually, I was able to get the camera to a 320X240 resolution and a steady two frames per second. The framerate could improve if I reduced the image quality a bit from QVGA to QQVGA, which is 160X120 resolution. Although, I found the stability of the framerate to be adequate enough for the working prototype.<br><br>
 
-With this I was able to get the camera to a 320X240 resolution and a steady two frames per second. The framerate could improve if I reduced the image quality a bit from QVGA to QQVGA, which is 160X120 resolution.
-
-With a [XIAO ESP32-S3 Sense](https://www.seeedstudio.com/XIAO-ESP32S3-Sense-p-5639.html?srsltid=AfmBOortHAxCDHRj2DqrsT-MoDrvqRXKZZhuzxsczGOoQUfZg3wF8nEA), I was able to do straight JPEG captures without the need of having software conversion as the middle man. The stream was also more usable at to over ten frames per second with QVGA. This is due to the onboard 8 MB of PSRAM that helps the ESP32 store more frames that are then sent over to the HTTP server. Below is a screenshot of the sensor in use.
+Later, I experimented with a [XIAO ESP32-S3 Sense](https://www.seeedstudio.com/XIAO-ESP32S3-Sense-p-5639.html?srsltid=AfmBOortHAxCDHRj2DqrsT-MoDrvqRXKZZhuzxsczGOoQUfZg3wF8nEA), I was able to do straight full color JPEG captures without the need of having software conversion as the middle man. The stream was also more usable at to over ten frames per second with QVGA. This is due to the onboard 8 MB of PSRAM that helps the ESP32 store more frames that are then sent over to the HTTP server. Below is a screenshot of the XIAO sensor in use.
 
 <div align="center">
   <img src="sablecampage.png" width="600">
 </div>
 <div align="center"> Figure 4 - JPEG Capture With XIAO ESP32-S3 Sense<br><br>
+<div align="Left"><br>
+
+As you can see, the image distortion is minimal and the framerate and resolution scare are very usable. If I were to approach this design again, a similar microcontroller with PSRAM would be the ideal choice.
 
 **Known Working OV2640 Camera Configuration Settings**
 
 <div align="Left"><br>
-Below is a list of the camera settings I used to get the OV2640 to work at a steady FPS using a ESP32-S3 with no PSRAM. You can use these with your ESP32 that has PSRAM as your baseline, and you can start to increase the camera quality if you notice that performance is still fine.
+In order to aid someone else in the future, I have compiled the settings I used to get the grayscale images to something usable like what you see on Figure 3. Below is a list of the camera settings I used to get the OV2640 to work at a steady FPS using a ESP32-S3 with no PSRAM. You can use these with your ESP32 that has PSRAM as your baseline, and you can start to increase the camera quality if you notice that performance is still fine.
 
 <div align="Left"><br>
 

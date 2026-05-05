@@ -14,7 +14,7 @@ Each component entry includes key information such as the manufacturer part numb
 
 >Below is the BOM attached as an excel file. Please use the links at the bottom of the page to download them.
 
-<object data="https://mcastr11-collab.github.io/EGR314MannyDataSheet/04-BOM/SableCamSensor.csv" type="application/pdf" width="700px" height="700px">
+<object data="https://mcastr11-collab.github.io/EGR314MannyDataSheet/04-BOM/SableCamSensorBOM.pdf" type="application/pdf" width="700px" height="700px">
     <embed src="https://egr304-203.github.io/sparkguard/Team203BlockDiagramFinal.pdf">
         <p>This browser does not support PDFs. Please download the PDF to view it: <a href="https://egr304-203.github.io/sparkguard/Team203BlockDiagramFinal.pdf">Download PDF</a>.</p>
     </embed>
@@ -22,6 +22,6 @@ Each component entry includes key information such as the manufacturer part numb
 
 ## Resouces
 
-The Bill of Material as a CSV download is available [*here*](./SableCamSensor.csv).
+The Bill of Material can be dpwnloaded as an Excel Workbook [Excel](./SableCamSensorBOM.xlsx). It is also available as a [CSV](./SableCamSensor.csv).
 
 >If you need the zipped source files of the BOM or any other files for this project, please see the [Resources](https://mcastr11-collab/EGR314MannyDataSheet/Appendix/Resources) section.
