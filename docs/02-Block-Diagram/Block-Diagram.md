@@ -23,5 +23,4 @@ The block diagram is embeded below as a PDF and it can be downloaded using the l
 
 Download of the Block Diagram PDF file [here](./Camera Subsystem Block Diagram.drawio.pdf)<br>
 
->If you need the zipped source files for the Block Diagram or any other files for this project, please see the [Resources](https://mcastr11-collab/EGR314MannyDataSheet/Appendix/Resources) section.
-
+>If you need the zipped source files for the Block Diagram or any other files for this project, please see the [Resources](https://mcastr11-collab/EGR314MannyDataSheet/docs/Appendix/Resources.md) section.
