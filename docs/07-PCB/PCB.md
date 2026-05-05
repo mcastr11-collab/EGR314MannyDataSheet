@@ -8,7 +8,7 @@ The PCB for the camera subsystem was designed to integrate the ESP32-S3 microcon
 
 
 <div align="center">
-  <img src="PCBTOP.jpeg" width="600">
+  <img src="docs/07-PCB/PCBTOP.jpeg" width="600">
 </div>
 
 
@@ -34,7 +34,7 @@ Traces were routed to connect all components while maintaining signal integrity 
 Design Rule Checks (DRC) and Electrical Rule Checks (ERC) were performed to ensure the PCB met manufacturing and electrical constraints before fabrication.
 
 <div align="center">
-  <img src="PCBBOTTOM.jpeg" width="600">
+  <img src="07-PCB/PCBBOTTOM.jpeg" width="600">
 </div>
 <div align="center">Figure 2 - Bottom View of Bare PCB<br><br></div>
 
