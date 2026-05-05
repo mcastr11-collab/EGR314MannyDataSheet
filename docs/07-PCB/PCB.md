@@ -10,6 +10,8 @@ The PCB for the camera subsystem was designed to integrate the ESP32-S3 microcon
 <div align="center">
   <img src="PCBTOP.jpeg" width="600">
 </div>
+
+
 <div align="center">Figure 1 - Top View of Bare PCB<br><br></div>
 
 </div>
