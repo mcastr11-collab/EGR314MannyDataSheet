@@ -20,7 +20,7 @@ A switching regulator was selected for the 3.3 V rail to efficiently step down f
 
 The subsystem can also be powered independently using a 9 V AC-DC wall supply rated at 3 A through an onboard barrel jack. In this configuration, the 9 V input is similarly regulated down to 3.3 V using the LM2575 switching regulator. In both power configurations, all rails remain within the required safety margin, confirming that the selected power sources and regulators are sufficient for the camera subsystem.<br>
 
-<object data="https://mcastr11-collab.github.io/EGR314MannyDataSheet/05-Power Budget/SableCamSystemPowerBudget.xlsx" type="application/pdf" width="700px" height="700px">
+<object data="https://mcastr11-collab.github.io/EGR314MannyDataSheet/06-Power Budget/SableCamSystemPowerBudget.pdf" type="application/pdf" width="700px" height="700px">
     <embed src="https://egr304-203.github.io/sparkguard/Team203BlockDiagramFinal.pdf">
         <p>This browser does not support PDFs. Please download the PDF to view it: <a href="https://egr304-203.github.io/sparkguard/Team203BlockDiagramFinal.pdf">Download PDF</a>.</p>
     </embed>
