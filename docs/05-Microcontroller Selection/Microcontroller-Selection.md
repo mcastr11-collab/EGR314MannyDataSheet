@@ -63,4 +63,4 @@ Finally, the ESP32-S3-WROOM-1-N4 was readily available within the project enviro
 
 **Resources** <br>
 
->If you need the zipped source files for the component selection or any other files for this project, please see the [Resources](https://mcastr11-collab/EGR314MannyDataSheet/Appendix/Resources) section.
+>If you need the zipped source files for the component selection or any other files for this project, please see the [Resources](https://mcastr11-collab.github.io/EGR314MannyDataSheet/Appendix/) section.
