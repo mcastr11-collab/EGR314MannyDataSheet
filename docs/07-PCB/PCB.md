@@ -15,7 +15,6 @@ The PCB for the camera subsystem was designed to integrate the ESP32-S3 microcon
 <br><br>
 
 
-
 **Design Process**
 
 
@@ -33,11 +32,12 @@ Traces were routed to connect all components while maintaining signal integrity 
 Design Rule Checks (DRC) and Electrical Rule Checks (ERC) were performed to ensure the PCB met manufacturing and electrical constraints before fabrication.
 <br>
 
-![PCB](PCBBOTTOM.jpeg){style width:"350" height:"300;"}
-
-<div align="center">Figure 2 - Bottom View of Bare PCB<br><br></div>
-
+<div align="center">
+  <img src="/EGR314MannyDataSheet/07-PCB/PCBBOTTOM.jpeg" width="600" height="450">
+  <br>
+  <b>Figure 2 - Bottom View of Bare PCB</b>
 </div>
+<br><br>
 
 ### Key Considerations
 
@@ -52,16 +52,23 @@ Lastly, a common ground plane was used across the PCB to provide a stable refere
 
 ### Design Outcomes
 
-![PCB](PCBASSYTOP.jpeg){style width:"350" height:"300;"}
-
-<div align="center">Figure 3 - Top View of Assembled PCB<br><br></div>
-
-<div align="Left"> The final PCB design successfully integrates all required components into a compact and functional layout. The design supports reliable camera operation, stable power delivery, and communication with other subsystems through UART and WiFi. Additionally, the design is manufacturable using standard PCB fabrication processes and supports straightforward assembly.<br><br></div>
-
-![PCB](PCBASSYBOTTOM.jpeg){style width:"350" height:"300;"}
-<div align="center">Figure 4 - Bottom View of Assembled PCB<br><br></div>
-
+<div align="center">
+  <img src="/EGR314MannyDataSheet/07-PCB/PCBASSYTOP.jpeg" width="600" height="450">
+  <br>
+  <b>Figure 3 - Top View of Assembled PCB</b>
+</div>
 <br><br>
+
+
+ The final PCB design successfully integrates all required components into a compact and functional layout. The design supports reliable camera operation, stable power delivery, and communication with other subsystems through UART and WiFi. Additionally, the design is manufacturable using standard PCB fabrication processes and supports straightforward assembly.<br><br></div>
+
+<div align="center">
+  <img src="/EGR314MannyDataSheet/07-PCB/PCBBOTTOM.jpeg" width="600" height="450">
+  <br>
+  <b>Figure 4 - Bottom View of Assembled PCB</b>
+</div>
+<br><br>
+
 >Below you will find the PCB view on PDF with all layers turned on.
 
 <object data="https://mcastr11-collab.github.io/EGR314MannyDataSheet/07-PCB/SablePCBalllayers.pdf" type="application/pdf" width="700px" height="700px">
