@@ -24,4 +24,4 @@ Each component entry includes key information such as the manufacturer part numb
 
 The Bill of Material can be dpwnloaded as an Excel Workbook [Excel](./SableCamSensorBOM.xlsx). It is also available as a [CSV](./SableCamSensor.csv).
 
->If you need the zipped source files of the BOM or any other files for this project, please see the [Resources](Appendix/index.md) section.
+>If you need the zipped source files of the BOM or any other files for this project, please see the [Resources](https://mcastr11-collab.github.io/EGR314MannyDataSheet/Appendix/) section.

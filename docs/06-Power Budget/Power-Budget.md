@@ -31,4 +31,4 @@ The subsystem can also be powered independently using a 9 V AC-DC wall supply ra
 
 A link to download the power budget may be found [here] (./SableCamSystemPowerBudget.xlsx)
 
->If you need the zipped source files of the Power Budget or any other files for this project, please see the [Resources](Appendix/index.md) section.
+>If you need the zipped source files of the Power Budget or any other files for this project, please see the [Resources](https://mcastr11-collab.github.io/EGR314MannyDataSheet/Appendix/) section.
